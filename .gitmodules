@@ -1,0 +1,3 @@
+[submodule "comments-app"]
+	path = comments-app
+	url = https://github.com/krishnapuja/comments-app.git
