@@ -24,7 +24,8 @@ const AddComment = ({handleModalClose, addCommentModalDisplay}) => {
             body: JSON.stringify(formState), 
           }).then(res => res.json())
         .then(res => {
-            console.log(res);
+            setFormState({...initialFormState});
+            handleModalClose();
         })
         .catch(e=>{
             console.log(e);
